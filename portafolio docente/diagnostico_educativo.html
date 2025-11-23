@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico Educativo - Carlos Antonio Salgado Romero</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="objetivos.css">
+    <link rel="stylesheet" href="diagnostico.css">
+</head>
+<body>
+    
+    <!-- App Container -->
+    <section id="app" class="logged-in">
+        
+        <!-- Background -->
+        <section id="app-background">
+            <div id="app-background-image" class="background-image"></div>
+        </section>
+        
+        <!-- Main Menu -->
+        <main id="app-menu">
+            <section id="app-menu-content-wrapper">
+                <article id="app-menu-content">
+                    
+                    <!-- Header con Logo y Hora -->
+                    <header id="app-menu-content-header">
+                        <article class="header-left">
+                            <!-- Logo Universidad -->
+                            <figure class="logo-placeholder small">
+                                <img src="LogoUes.png" alt="Logo Universidad de El Salvador" class="logo-image">
+                            </figure>
+                            <section class="header-info">
+                                <span class="time" id="time-menu">5:45</span>
+                                <span class="university-text">Universidad de El Salvador</span>
+                            </section>
+                        </article>
+                        <article class="header-right">
+                            <a href="index.html" class="user-status-button clear-button">
+                                <i class="fa-solid fa-house"></i>
+                            </a>
+                        </article>
+                    </header>
+                    
+                    <!-- Navigation Bar - Fixed -->
+                    <nav id="main-nav">
+                        <a href="objetivos.html" class="nav-item clear-button">Objetivos de la práctica docente</a>
+                        <a href="planeacion.html" class="nav-item clear-button active">Planeación y organización</a>
+                        <a href="planificaciones.html" class="nav-item clear-button">Planificaciones de clases</a>
+                        <a href="evidencias.html" class="nav-item clear-button">Evidencias de la práctica docente</a>
+                        <a href="diario.html" class="nav-item clear-button">Diario reflexivo semanal</a>
+                        <a href="instrumentos.html" class="nav-item clear-button">Instrumentos aplicados y resultados</a>
+                        <a href="evaluacion.html" class="nav-item clear-button">Evaluación y retroalimentación</a>
+                        <a href="mejora.html" class="nav-item clear-button">Propuesta de mejora</a>
+                        <a href="recursos.html" class="nav-item clear-button">Recursos tecnológicos aplicados</a>
+                        <a href="anexos.html" class="nav-item clear-button">Anexos</a>
+                    </nav>
+                    
+                    <!-- Sub Navigation Bar -->
+                    <nav id="sub-nav">
+                        <div class="border-effect"></div>
+                        <ul>
+                            <li id="diagnostico-tab" class="active">
+                                <a href="diagnostico_educativo.html" class="sub-nav-link">
+                                    <svg class="active-fill" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M15.5 9.75C16.0523 9.75 16.5 9.30228 16.5 8.75C16.5 8.19772 16.0523 7.75 15.5 7.75C14.9477 7.75 14.5 8.19772 14.5 8.75C14.5 9.30228 14.9477 9.75 15.5 9.75Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.5 9.75C9.05228 9.75 9.5 9.30228 9.5 8.75C9.5 8.19772 9.05228 7.75 8.5 7.75C7.94772 7.75 7.5 8.19772 7.5 8.75C7.5 9.30228 7.94772 9.75 8.5 9.75Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.5 13.5H10C10.83 13.5 11.5 14.17 11.5 15C11.5 15.83 10.83 16.5 10 16.5H8.5C7.67 16.5 7 15.83 7 15" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.5 16.5C14.7426 16.5 15.75 15.4926 15.75 14.25C15.75 13.0074 14.7426 12 13.5 12C12.2574 12 11.25 13.0074 11.25 14.25C11.25 15.4926 12.2574 16.5 13.5 16.5Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <p>Diagnóstico educativo</p>
+                                </a>
+                            </li>
+                            <li id="foda-tab">
+                                <a href="analisis_foda.html" class="sub-nav-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 12.98V15C2 20 4 22 9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.5 11.29L10.59 14.38L16.5 8.46997" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <p>Análisis FODA</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                    <!-- Content Sections -->
+                    <section id="page-content">
+                        
+                        <!-- Diagnóstico Educativo Content -->
+                        <article id="diagnostico-content" class="tab-content active">
+                            <section class="content-section">
+                                <header class="section-header">
+                                    <i class="fa-solid fa-clipboard-question"></i>
+                                    <h2 class="section-title">Diagnóstico Educativo</h2>
+                                </header>
+                                
+                                <!-- Descripción del Contexto -->
+                                <article class="section-content glass-morphism">
+                                    <h3 class="subsection-title">
+                                        <i class="fa-solid fa-school-flag"></i> 
+                                        Descripción del Contexto Escolar y Pedagógico
+                                    </h3>
+                                    
+                                    <!-- Instituto Info Card -->
+                                    <section class="instituto-card">
+                                        <div class="instituto-header">
+                                            <div class="instituto-icon">
+                                                <i class="fa-solid fa-building-columns"></i>
+                                            </div>
+                                            <div class="instituto-title">
+                                                <h4>Instituto Nacional "14 de Julio de 1875"</h4>
+                                                <span class="badge">Primer Año de Bachillerato</span>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    
+                                    <p class="intro-text">Mi proceso de diagnóstico se llevó a cabo en el <strong>Instituto Nacional "14 de Julio de 1875"</strong>, trabajando específicamente con estudiantes de primer año de bachillerato. El entorno educativo se enmarca en la <strong>Modalidad Flexible</strong>, una alternativa diseñada para atender a estudiantes que requieren espacios más adaptables que la educación tradicional.</p>
+                                    
+                                    <!-- Modelo Pedagógico -->
+                                    <section class="modelo-pedagogico">
+                                        <div class="modelo-icon">
+                                            <i class="fa-solid fa-rotate"></i>
+                                        </div>
+                                        <div class="modelo-content">
+                                            <h4>Modelo de Aula Invertida</h4>
+                                            <p>Desde una perspectiva pedagógica, el aula funciona bajo un modelo de <strong>"Aula Invertida"</strong>. Esto implica una dinámica donde los estudiantes preparan contenidos de forma asincrónica utilizando dispositivos electrónicos, reservando el tiempo en clase para la socialización, el debate y la aclaración de dudas.</p>
+                                        </div>
+                                    </section>
+                                    
+                                    <!-- Características del Espacio -->
+                                    <section class="caracteristicas-espacio">
+                                        <h4><i class="fa-solid fa-door-open"></i> Características del Espacio Físico</h4>
+                                        <div class="espacio-grid">
+                                            <div class="espacio-item positivo">
+                                                <i class="fa-solid fa-check-circle"></i>
+                                                <p>Buena iluminación general</p>
+                                            </div>
+                                            <div class="espacio-item negativo">
+                                                <i class="fa-solid fa-triangle-exclamation"></i>
+                                                <p>Obstáculo técnico con proyecciones</p>
+                                            </div>
+                                            <div class="espacio-item negativo">
+                                                <i class="fa-solid fa-wind"></i>
+                                                <p>Necesita mejorar ventilación</p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </article>
+                                
+                                <!-- Instrumentos Aplicados -->
+                                <article class="section-content glass-morphism">
+                                    <h3 class="subsection-title">
+                                        <i class="fa-solid fa-clipboard-check"></i> 
+                                        Instrumentos Aplicados
+                                    </h3>
+                                    
+                                    <p class="intro-text">Para garantizar la rigurosidad del diagnóstico, utilicé un diseño metodológico de <strong>enfoque cualitativo</strong>, orientado a comprender las percepciones y experiencias reales de los actores educativos.</p>
+                                    
+                                    <!-- Instrumentos Grid -->
+                                    <section class="instrumentos-grid">
+                                        
+                                        <article class="instrumento-card">
+                                            <div class="instrumento-header">
+                                                <div class="instrumento-number">1</div>
+                                                <div class="instrumento-icon observacion">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                </div>
+                                            </div>
+                                            <h4>Guía de Observación de Aula</h4>
+                                            <p>Diseñada para registrar las interacciones, la dinámica de participación y el uso de recursos tecnológicos y materiales durante las sesiones presenciales.</p>
+                                            <div class="instrumento-tag">
+                                                <i class="fa-solid fa-users"></i>
+                                                <span>Observación Directa</span>
+                                            </div>
+                                        </article>
+                                        
+                                        <article class="instrumento-card">
+                                            <div class="instrumento-header">
+                                                <div class="instrumento-number">2</div>
+                                                <div class="instrumento-icon cuestionario">
+                                                    <i class="fa-solid fa-clipboard-list"></i>
+                                                </div>
+                                            </div>
+                                            <h4>Cuestionario a Estudiantes</h4>
+                                            <p>Aplicado a una muestra de <strong>34 alumnos</strong> para indagar sobre sus necesidades, intereses, motivación y valoración de la retroalimentación docente.</p>
+                                            <div class="instrumento-tag">
+                                                <i class="fa-solid fa-user-graduate"></i>
+                                                <span>34 Estudiantes</span>
+                                            </div>
+                                        </article>
+                                        
+                                        <article class="instrumento-card">
+                                            <div class="instrumento-header">
+                                                <div class="instrumento-number">3</div>
+                                                <div class="instrumento-icon entrevista">
+                                                    <i class="fa-solid fa-comments"></i>
+                                                </div>
+                                            </div>
+                                            <h4>Entrevista Semiestructurada al Docente</h4>
+                                            <p>Una herramienta clave para contrastar la visión del alumnado con la estrategia pedagógica del titular, profundizando en su metodología y percepción del entorno.</p>
+                                            <div class="instrumento-tag">
+                                                <i class="fa-solid fa-chalkboard-user"></i>
+                                                <span>Enfoque Cualitativo</span>
+                                            </div>
+                                        </article>
+                                        
+                                    </section>
+                                </article>
+                            </section>
+                        </article>
+                        
+                    </section>
+                    
+                </article>
+            </section>
+        </main>
+        
+    </section>
+    
+    <script src="script.js"></script>
+    <script src="diagnostico_educativo.css"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Tecnológicos - Carlos Antonio Salgado Romero</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="objetivos.css">
+</head>
+<body>
+    
+    <!-- App Container -->
+    <section id="app" class="logged-in">
+        
+        <!-- Background -->
+        <section id="app-background">
+            <div id="app-background-image" class="background-image"></div>
+        </section>
+        
+        <!-- Main Menu -->
+        <main id="app-menu">
+            <section id="app-menu-content-wrapper">
+                <article id="app-menu-content">
+                    
+                    <!-- Header con Logo y Hora -->
+                    <header id="app-menu-content-header">
+                        <article class="header-left">
+                            <!-- Logo Universidad -->
+                            <figure class="logo-placeholder small">
+                                <img src="LogoUes.png" alt="Logo Universidad de El Salvador" class="logo-image">
+                            </figure>
+                            <section class="header-info">
+                                <span class="time" id="time-menu">5:45</span>
+                                <span class="university-text">Universidad de El Salvador</span>
+                            </section>
+                        </article>
+                        <article class="header-right">
+                            <a href="index.html" class="user-status-button clear-button">
+                                <i class="fa-solid fa-house"></i>
+                            </a>
+                        </article>
+                    </header>
+                    
+                    <!-- Navigation Bar - Fixed -->
+                    <nav id="main-nav">
+                        <a href="objetivos.html" class="nav-item clear-button active">Objetivos de la práctica docente</a>
+                        <a href="planeacion.html" class="nav-item clear-button">Planeación y organización</a>
+                        <a href="planificaciones.html" class="nav-item clear-button">Planificaciones de clases</a>
+                        <a href="evidencias.html" class="nav-item clear-button">Evidencias de la práctica docente</a>
+                        <a href="diario.html" class="nav-item clear-button">Diario reflexivo semanal</a>
+                        <a href="instrumentos.html" class="nav-item clear-button">Instrumentos aplicados y resultados</a>
+                        <a href="evaluacion.html" class="nav-item clear-button">Evaluación y retroalimentación</a>
+                        <a href="mejora.html" class="nav-item clear-button">Propuesta de mejora</a>
+                        <a href="recursos.html" class="nav-item clear-button">Recursos tecnológicos aplicados</a>
+                        <a href="anexos.html" class="nav-item clear-button">Anexos</a>
+                    </nav>
+                    
+                    <!-- Sub Navigation Bar -->
+                    <nav id="sub-nav">
+                        <div class="border-effect"></div>
+                        <ul>
+                            <li id="objetivos-tab">
+                                <a href="objetivos.html" class="sub-nav-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z" stroke-width="1.5"/>
+                                    </svg>
+                                    <p>Objetivos</p>
+                                </a>
+                            </li>
+                            <li id="contexto-tab">
+                                <a href="contexto_educativo.html" class="sub-nav-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 14C13.6569 14 15 12.6569 15 11C15 9.34315 13.6569 8 12 8C10.3431 8 9 9.34315 9 11C9 12.6569 10.3431 14 12 14Z" stroke-width="1.5"/>
+                                        <path d="M3.62001 8.49C5.59001 -0.169998 18.42 -0.159997 20.38 8.5C21.53 13.58 18.37 17.88 15.6 20.54C13.59 22.48 10.41 22.48 8.39001 20.54C5.63001 17.88 2.47001 13.57 3.62001 8.49Z" stroke-width="1.5"/>
+                                    </svg>
+                                    <p>Contexto educativo</p>
+                                </a>
+                            </li>
+                            <li id="recursos-tab" class="active">
+                                <a href="recursos_tecnologicos.html" class="sub-nav-link">
+                                    <svg class="active-fill" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.5 13.7502C9.5 14.7202 10.25 15.5002 11.17 15.5002H13.05C13.85 15.5002 14.5 14.8202 14.5 13.9702C14.5 13.0602 14.1 12.7302 13.51 12.5202L10.5 11.4702C9.91 11.2602 9.51001 10.9402 9.51001 10.0202C9.51001 9.18023 10.16 8.49023 10.96 8.49023H12.84C13.76 8.49023 14.51 9.27023 14.51 10.2402" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 7.5V16.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M17 3V7H21" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M22 2L17 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <p>Recursos tecnológicos</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                    <!-- Content Sections -->
+                    <section id="page-content">
+                        
+                        <!-- Recursos Tecnológicos Content -->
+                        <article id="recursos-content" class="tab-content active">
+                            <section class="content-section">
+                                <header class="section-header">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                    <h2 class="section-title">Recursos Tecnológicos Disponibles</h2>
+                                </header>
+                                
+                                <!-- Introducción -->
+                                <article class="section-content glass-morphism">
+                                    <p class="intro-text">La estrategia didáctica se desarrolló mediante un <strong>modelo híbrido de recursos</strong>:</p>
+                                </article>
+                                
+                                <!-- Recursos del Estudiantado -->
+                                <article class="section-content glass-morphism">
+                                    <h3 class="subsection-title"><i class="fa-solid fa-mobile-screen"></i> Recursos del Estudiantado</h3>
+                                    
+                                    <section class="recurso-destacado estudiantes">
+                                        <div class="recurso-icon-large">
+                                            <i class="fa-solid fa-graduation-cap"></i>
+                                        </div>
+                                        <div class="recurso-description">
+                                            <p>Se aprovechó el uso de <strong>dispositivos móviles personales</strong> como herramientas de investigación inmediata y visualización de material audiovisual en clase.</p>
+                                        </div>
+                                    </section>
+                                </article>
+                                
+                                <!-- Aporte Tecnológico del Docente -->
+                                <article class="section-content glass-morphism">
+                                    <h3 class="subsection-title"><i class="fa-solid fa-chalkboard-user"></i> Aporte Tecnológico del Docente Practicante</h3>
+                                    
+                                    <p class="intro-text">Para garantizar una experiencia multimedia completa, gestioné e implementé mi propio equipo tecnológico, incluyendo:</p>
+                                    
+                                    <section class="recursos-grid">
+                                        <article class="recurso-card">
+                                            <div class="recurso-card-icon">
+                                                <i class="fa-solid fa-video"></i>
+                                            </div>
+                                            <h4>Proyector (Cañón)</h4>
+                                            <p>Para presentaciones visuales</p>
+                                        </article>
+                                        
+                                        <article class="recurso-card">
+                                            <div class="recurso-card-icon">
+                                                <i class="fa-solid fa-volume-high"></i>
+                                            </div>
+                                            <h4>Sistema de Audio</h4>
+                                            <p>Bocina para material multimedia</p>
+                                        </article>
+                                        
+                                        <article class="recurso-card">
+                                            <div class="recurso-card-icon">
+                                                <i class="fa-solid fa-laptop"></i>
+                                            </div>
+                                            <h4>Ordenador Portátil</h4>
+                                            <p>Como centro de mando</p>
+                                        </article>
+                                    </section>
+                                </article>
+                                
+                                <!-- Entornos Digitales -->
+                                <article class="section-content glass-morphism">
+                                    <h3 class="subsection-title"><i class="fa-solid fa-cloud"></i> Entornos Digitales</h3>
+                                    
+                                    <p class="intro-text">Se integraron plataformas clave para el desarrollo de competencias digitales:</p>
+                                    
+                                    <section class="plataformas-grid">
+                                        <article class="plataforma-item">
+                                            <div class="plataforma-icon canvas">
+                                                <i class="fa-solid fa-palette"></i>
+                                            </div>
+                                            <div class="plataforma-info">
+                                                <h4>Canvas</h4>
+                                                <p>Diseño de infografías</p>
+                                            </div>
+                                        </article>
+                                        
+                                        <article class="plataforma-item">
+                                            <div class="plataforma-icon youtube">
+                                                <i class="fa-brands fa-youtube"></i>
+                                            </div>
+                                            <div class="plataforma-info">
+                                                <h4>YouTube</h4>
+                                                <p>Contenido educativo</p>
+                                            </div>
+                                        </article>
+                                        
+                                        <article class="plataforma-item">
+                                            <div class="plataforma-icon google">
+                                                <i class="fa-brands fa-google"></i>
+                                            </div>
+                                            <div class="plataforma-info">
+                                                <h4>Google Meet</h4>
+                                                <p>Comunicación virtual</p>
+                                            </div>
+                                        </article>
+                                    </section>
+                                </article>
+                            </section>
+                        </article>
+                        
+                    </section>
+                    
+                </article>
+            </section>
+        </main>
+        
+    </section>
+    
+    <script src="script.js"></script>
+    <script src="objetivos.js"></script>
+</body>
+</html>

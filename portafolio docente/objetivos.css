@@ -1,0 +1,315 @@
+/* ===========================================
+   SUB NAVIGATION BAR
+=========================================== */
+#sub-nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-md);
+  background: rgba(18, 18, 18, 0.6);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  margin-bottom: var(--spacing-lg);
+  overflow: visible;
+}
+
+.border-effect {
+  position: absolute;
+  width: 60px;
+  left: calc(33.33% / 2 - 30px);
+  top: 0;
+  height: 8px;
+  background: linear-gradient(90deg, var(--blue), var(--blue-dark));
+  border-radius: 0px 0px 18px 18px;
+  filter: drop-shadow(0px 5px 8px rgba(66, 165, 245, 0.5));
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 1;
+}
+
+#sub-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: var(--spacing-sm);
+}
+
+#sub-nav li {
+  flex: 1;
+  display: flex;
+}
+
+.sub-nav-link {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: var(--spacing-sm);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  min-height: 80px;
+  text-decoration: none;
+}
+
+.sub-nav-link:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#sub-nav li p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.3s ease;
+  text-align: center;
+  margin: 0;
+}
+
+#sub-nav li.active p {
+  color: var(--blue);
+}
+
+#sub-nav svg {
+  width: 32px;
+  height: 32px;
+  fill: rgba(18, 18, 18, 0.8);
+  transition: all 0.3s ease;
+}
+
+#sub-nav svg path {
+  stroke: rgba(255, 255, 255, 0.5);
+  fill: none;
+  transition: stroke 0.3s ease;
+}
+
+#sub-nav li.active svg {
+  fill: var(--blue);
+}
+
+#sub-nav li.active svg path {
+  stroke: var(--blue);
+  stroke-width: 1;
+}
+
+/* ===========================================
+   TAB CONTENT
+=========================================== */
+#page-content {
+  margin-top: var(--spacing-md);
+}
+
+.tab-content {
+  display: none;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* ===========================================
+   SUBSECTION STYLES
+=========================================== */
+.subsection-title {
+  color: var(--text-color);
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.subsection-title i {
+  color: var(--blue);
+  font-size: 1.5em;
+}
+
+/* ===========================================
+   OBJETIVO ITEMS
+=========================================== */
+.objetivo-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  border-left: 4px solid var(--blue);
+  transition: all 0.3s ease;
+}
+
+.objetivo-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateX(5px);
+}
+
+.objetivo-item:last-child {
+  margin-bottom: 0;
+}
+
+.objetivo-number {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+  border-radius: 50%;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+  box-shadow: 0 4px 12px rgba(66, 165, 245, 0.3);
+}
+
+.objetivo-item p {
+  flex: 1;
+  margin: 0;
+  line-height: 1.8;
+}
+
+/* ===========================================
+   ACTIVE NAV ITEM
+=========================================== */
+#main-nav .nav-item.active {
+  background: rgba(66, 165, 245, 0.2);
+  color: var(--white);
+  border-color: rgba(66, 165, 245, 0.4);
+}
+
+/* ===========================================
+   RESPONSIVE - TABLET
+=========================================== */
+@media (max-width: 1024px) {
+  #sub-nav ul {
+    max-width: 100%;
+  }
+  
+  #sub-nav li {
+    min-height: 70px;
+  }
+  
+  #sub-nav svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* ===========================================
+   RESPONSIVE - MOBILE
+=========================================== */
+@media (max-width: 768px) {
+  #sub-nav {
+    padding: var(--spacing-sm);
+  }
+  
+  #sub-nav ul {
+    gap: var(--spacing-xs);
+  }
+  
+  .sub-nav-link {
+    min-height: 60px;
+    padding: var(--spacing-xs);
+  }
+  
+  #sub-nav li p {
+    font-size: 0.9rem;
+  }
+  
+  #sub-nav svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .border-effect {
+    width: 50px;
+    height: 6px;
+  }
+  
+  .subsection-title {
+    font-size: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .objetivo-item {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
+  .objetivo-number {
+    width: 35px;
+    height: 35px;
+    font-size: 1.1rem;
+  }
+}
+
+/* ===========================================
+   RESPONSIVE - SMALL MOBILE
+=========================================== */
+@media (max-width: 480px) {
+  #sub-nav li p {
+    font-size: 0.8rem;
+  }
+  
+  #sub-nav svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .sub-nav-link {
+    gap: 4px;
+    min-height: 55px;
+  }
+  
+  .border-effect {
+    width: 40px;
+    height: 5px;
+  }
+  
+  .subsection-title {
+    font-size: 1.3rem;
+  }
+  
+  .objetivo-item {
+    padding: var(--spacing-sm);
+  }
+  
+  .objetivo-number {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+}
+
+/* ===========================================
+   RESPONSIVE - EXTRA SMALL
+=========================================== */
+@media (max-width: 360px) {
+  #sub-nav {
+    padding: var(--spacing-xs);
+  }
+  
+  #sub-nav li p {
+    font-size: 0.75rem;
+  }
+  
+  #sub-nav svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .border-effect {
+    width: 35px;
+  }
+}

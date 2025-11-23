@@ -1,0 +1,477 @@
+/* ===========================================
+   DIAGNÓSTICO EDUCATIVO - STYLES
+=========================================== */
+
+/* Instituto Card */
+.instituto-card {
+  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-lg);
+  background: linear-gradient(
+    135deg,
+    rgba(66, 165, 245, 0.15) 0%,
+    rgba(57, 73, 171, 0.15) 100%
+  );
+  border-radius: 20px;
+  border: 2px solid rgba(66, 165, 245, 0.3);
+  box-shadow: 0 8px 24px rgba(66, 165, 245, 0.2);
+}
+
+.instituto-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.instituto-icon {
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(66, 165, 245, 0.4);
+}
+
+.instituto-icon i {
+  color: white;
+  font-size: 2em;
+}
+
+.instituto-title h4 {
+  color: var(--text-color);
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(66, 165, 245, 0.3);
+  border: 1px solid rgba(66, 165, 245, 0.5);
+  border-radius: 20px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Modelo Pedagógico */
+.modelo-pedagogico {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+  padding: var(--spacing-lg);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  border-left: 4px solid #10b981;
+}
+
+.modelo-icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #10b981, #059669);
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.4);
+  animation: rotate-slow 8s linear infinite;
+}
+
+@keyframes rotate-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.modelo-icon i {
+  color: white;
+  font-size: 1.8em;
+}
+
+.modelo-content h4 {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+.modelo-content p {
+  margin: 0;
+  line-height: 1.8;
+}
+
+/* Características del Espacio */
+.caracteristicas-espacio {
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-lg);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+}
+
+.caracteristicas-espacio h4 {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.caracteristicas-espacio h4 i {
+  color: var(--blue);
+  font-size: 1.2em;
+}
+
+.espacio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.espacio-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.espacio-item i {
+  font-size: 1.5em;
+  flex-shrink: 0;
+}
+
+.espacio-item p {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.espacio-item.positivo {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.espacio-item.positivo i {
+  color: #10b981;
+}
+
+.espacio-item.positivo:hover {
+  background: rgba(16, 185, 129, 0.15);
+  transform: scale(1.02);
+}
+
+.espacio-item.negativo {
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.espacio-item.negativo i {
+  color: #f59e0b;
+}
+
+.espacio-item.negativo:hover {
+  background: rgba(245, 158, 11, 0.15);
+  transform: scale(1.02);
+}
+
+/* Instrumentos Grid */
+.instrumentos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.instrumento-card {
+  padding: var(--spacing-lg);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.instrumento-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-8px);
+  border-color: var(--blue);
+  box-shadow: 0 12px 32px rgba(66, 165, 245, 0.3);
+}
+
+.instrumento-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.instrumento-number {
+  flex-shrink: 0;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+  border-radius: 12px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(66, 165, 245, 0.3);
+}
+
+.instrumento-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.instrumento-icon i {
+  color: white;
+  font-size: 1.8em;
+}
+
+.instrumento-icon.observacion {
+  background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+}
+
+.instrumento-icon.cuestionario {
+  background: linear-gradient(135deg, #ec4899, #be185d);
+}
+
+.instrumento-icon.entrevista {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.instrumento-card h4 {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+.instrumento-card p {
+  flex: 1;
+  margin: 0 0 var(--spacing-md) 0;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.instrumento-tag {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: 8px 16px;
+  background: rgba(66, 165, 245, 0.15);
+  border: 1px solid rgba(66, 165, 245, 0.3);
+  border-radius: 20px;
+  align-self: flex-start;
+}
+
+.instrumento-tag i {
+  color: var(--blue);
+  font-size: 1em;
+}
+
+.instrumento-tag span {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* ===========================================
+   RESPONSIVE - DIAGNÓSTICO
+=========================================== */
+@media (max-width: 1024px) {
+  .instrumentos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .instituto-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .instituto-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .instituto-icon i {
+    font-size: 1.8em;
+  }
+  
+  .instituto-title h4 {
+    font-size: 1.5rem;
+  }
+  
+  .modelo-pedagogico {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .modelo-icon {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .modelo-icon i {
+    font-size: 1.6em;
+  }
+  
+  .modelo-content h4 {
+    font-size: 1.3rem;
+  }
+  
+  .espacio-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .caracteristicas-espacio h4 {
+    font-size: 1.3rem;
+  }
+  
+  .espacio-item p {
+    font-size: 1.1rem;
+  }
+  
+  .instrumento-header {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  .instrumento-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+  }
+  
+  .instrumento-icon {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .instrumento-icon i {
+    font-size: 1.6em;
+  }
+  
+  .instrumento-card h4 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .instituto-card {
+    padding: var(--spacing-md);
+  }
+  
+  .instituto-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .instituto-icon i {
+    font-size: 1.5em;
+  }
+  
+  .instituto-title h4 {
+    font-size: 1.3rem;
+  }
+  
+  .badge {
+    font-size: 0.9rem;
+    padding: 4px 12px;
+  }
+  
+  .modelo-pedagogico {
+    padding: var(--spacing-md);
+  }
+  
+  .modelo-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .modelo-icon i {
+    font-size: 1.4em;
+  }
+  
+  .modelo-content h4 {
+    font-size: 1.2rem;
+  }
+  
+  .caracteristicas-espacio {
+    padding: var(--spacing-md);
+  }
+  
+  .caracteristicas-espacio h4 {
+    font-size: 1.2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .espacio-item {
+    padding: var(--spacing-sm);
+  }
+  
+  .espacio-item i {
+    font-size: 1.3em;
+  }
+  
+  .espacio-item p {
+    font-size: 1rem;
+  }
+  
+  .instrumentos-grid {
+    gap: var(--spacing-md);
+  }
+  
+  .instrumento-card {
+    padding: var(--spacing-md);
+  }
+  
+  .instrumento-number {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
+  
+  .instrumento-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .instrumento-icon i {
+    font-size: 1.5em;
+  }
+  
+  .instrumento-card h4 {
+    font-size: 1.2rem;
+  }
+  
+  .instrumento-tag {
+    padding: 6px 12px;
+  }
+  
+  .instrumento-tag span {
+    font-size: 0.9rem;
+  }
+}
